@@ -9,6 +9,7 @@
 #include <cmath> //for using round and log functions
 #include <map> //for creating maps to hold things
 #include <ctime> //for getting and manipulating time
+#include <string> //string stuff
 
 using namespace std; //used to make code cleaner
 
@@ -149,7 +150,7 @@ public:
         string purchaseID = "";
         int purchaseQuant = 0;
 
-        system("clear"); //clear Screen
+        system("cls"); //clear Screen
         printHeader(); //print out gamer header
 
         cout << endl << endl << "What would you like to order?" << endl;
@@ -289,7 +290,7 @@ public:
         double tendered = 0; //test
 
         //clear everything and replace header and catalog
-        system("clear");
+        system("cls");
         printHeader();
         printCatalog();
 
@@ -354,7 +355,7 @@ int main() {
 
     do {
         stop = reRun(); //rerun reRun until it tells us to stop
-        system("clear");
+        system("cls");
     } while (stop);
 
     return 0;
